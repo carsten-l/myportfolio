@@ -38,7 +38,7 @@ export default function Home() {
         <Link
           className="rounded-full tracking-wide border border-2 border-accent
            flex items-center justify-center gap-4 hover:bg-accent hover:text-white  text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-          href="my-work"
+          href="my-projects"
         >
           Have a look around <FaArrowRightLong />
         </Link>
