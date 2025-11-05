@@ -38,8 +38,8 @@ export default function ProfilePage() {
         </span>
         <span className="flex">
           <FaGithub size="1.5em" className="mr-2" />{" "}
-          <Link href="https://github.com/clurts" target="blank">
-            github.com/clurts
+          <Link href="https://github.com/carsten-l" target="blank">
+            github.com/carsten-l
           </Link>{" "}
         </span>
       </p>
