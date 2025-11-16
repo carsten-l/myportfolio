@@ -30,7 +30,7 @@ export default function RepoCard({ repo }: { repo: Repo }) {
       <footer className="mt-auto pt-4 flex flex-col gap-4 sm:flex-row sm:gap-2 ">
         <Link
           className="font-serif inline-block px-4 py-1 rounded-full  border-accent border-2 hover:bg-accent hover:text-white self-start"
-          href={`/my-work/${repo.name}`}
+          href={`/my-projects/${repo.name}`}
         >
           Read more
         </Link>
