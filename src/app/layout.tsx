@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Besley, Source_Serif_4 } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
