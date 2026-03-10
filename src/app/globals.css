@@ -3,8 +3,6 @@
 @theme {
     --color-accent: hsl(180, 100%, 35%);
     --color-accent-light: hsl(180, 100%, 70%);
-    --font-besley: Besley, serif;
-    --font-serif: "Source Serif 4", serif;
     --font-sans: var(--font-adwaita-sans);
 }
 

@@ -10,16 +10,6 @@ const adwaitaSans = localFont({
   variable: "--font-adwaita-sans",
 });
 
-const besley = Besley({
-  subsets: ["latin"],
-  variable: "--font-besley", // matches your @theme variable
-});
-
-const sourceSerif = Source_Serif_4({
-  subsets: ["latin"],
-  variable: "--font-serif", // matches your @theme variable
-});
-
 export const metadata: Metadata = {
   title: "Portfolio - Carsten Lund",
   description:
