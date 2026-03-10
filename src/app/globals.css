@@ -1,54 +1,54 @@
 @import "tailwindcss";
 
 @theme {
-    --color-accent: hsl(180, 100%, 35%);
-    --color-accent-light: hsl(180, 100%, 70%);
-    --font-sans: var(--font-adwaita-sans);
+  --color-accent: hsl(180, 100%, 35%);
+  --color-accent-light: hsl(180, 100%, 70%);
+  --font-sans: var(--font-adwaita-sans);
 }
 
 :root {
-    color-scheme: light;
-    --light: #ffffff;
-    --dark: #212737;
+  color-scheme: light dark;
+  --light: #ffffff;
+  --dark: #212737;
+}
+
+html {
+  background: light-dark(var(--light), var(--dark));
 }
 
 body {
-    color: light-dark(var(--light), var(--dark));
-    background: light-dark(var(--dark), var(--light));
-    font-weight: 300;
+  color: light-dark(var(--dark), var(--light));
+  background: light-dark(var(--light), var(--dark));
+  font-weight: 300;
 }
 
 header,
 main {
-    box-sizing: content-box;
-    max-width: 960px;
-    padding-inline: 1.5rem;
+  box-sizing: content-box;
+  max-width: 960px;
+  padding-inline: 1.5rem;
 }
 
 .brand-name {
-    view-transition-name: --brand-name;
+  view-transition-name: --brand-name;
 }
 
 ::view-transition-group(*) {
-    animation-duration: 0.5s;
+  animation-duration: 0.5s;
 }
 
 .github-readme h1 {
-    @apply text-accent text-4xl font-extrabold;
+  @apply text-accent text-4xl font-extrabold;
 }
 
 .github-readme p {
-    margin-top: 1lh;
+  @apply mt-[1lh];
 }
 
 .github-readme a {
-    color: light-dark(hsl(240, 100%, 50%), hsl(240, 100%, 75%));
-    text-decoration: underline;
+  @apply text-accent underline;
 }
 
 .github-readme h2 {
-    font-size: 1.625rem;
-    font-weight: 700;
-    border-bottom: 1px solid;
-    margin-top: 0.5lh;
+  @apply text-2xl font-bold mt-[0.5lh] border-b;
 }
