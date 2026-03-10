@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import { Besley, Source_Serif_4 } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
+
+const adwaitaSans = localFont({
+  src: "../fonts/AdwaitaSans-Regular.ttf",
+  subsets: ["latin"],
+  variable: "--font-adwaita-sans",
+});
 
 const besley = Besley({
   subsets: ["latin"],
@@ -27,21 +34,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${besley.variable} ${sourceSerif.variable} antialiased font-serif`}
+        className={`${adwaitaSans.className} ${sourceSerif.variable} antialiased font-serif`}
       >
-        <header className="antialiased px-12">
+        <header className="antialiased mb-6 mx-auto border-b border-accent pb-6 md:pb-0">
           <div className="flex flex-col justify-center md:flex-row md:justify-between">
-            <div className="text-2xl font-besley font-bold py-6 text-center md:text-left md:py-12">
+            <div className="text-2xl font-bold py-6 text-center md:text-left md:py-12">
               Carsten Lund
             </div>
-            <nav className="flex gap-10 self-center">
-              <Link className="font-serif font-medium" href="/">
+            <nav className="flex gap-6 md:gap-10 self-center">
+              <Link className="font-medium" href="/">
                 Home
               </Link>
-              <Link className="font-serif font-medium" href="/my-projects">
+              <Link className="font-medium" href="/my-projects">
                 My Projects
               </Link>
-              <Link className="font-serif font-medium" href="/about-me">
+              <Link className="font-medium" href="/about-me">
                 About me
               </Link>
             </nav>
