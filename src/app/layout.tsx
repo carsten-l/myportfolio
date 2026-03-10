@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${adwaitaSans.className} ${sourceSerif.variable} antialiased font-serif`}
+        className={`${adwaitaSans.className} antialiased`}
       >
         <header className="antialiased mb-6 mx-auto border-b border-accent pb-6 md:pb-0">
           <div className="flex flex-col justify-center md:flex-row md:justify-between">
