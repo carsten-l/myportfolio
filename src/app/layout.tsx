@@ -5,7 +5,6 @@ import Link from "next/link";
 
 const adwaitaSans = localFont({
   src: "../fonts/AdwaitaSans-Regular.ttf",
-  subsets: ["latin"],
   variable: "--font-adwaita-sans",
 });
 
