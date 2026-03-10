@@ -31,7 +31,7 @@ export default async function RepoPage({
   const markup = await getData(slug);
 
   return (
-    <main className="p-12">
+    <main className="p-12 mx-auto">
       <div className="flex gap-4 items-center flex-col sm:flex-row">
         <Link
           className="rounded-full tracking-wide border-2 border-accent flex items-center justify-center gap-4 hover:bg-accent hover:text-white text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"

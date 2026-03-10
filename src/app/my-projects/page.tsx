@@ -22,7 +22,7 @@ export default async function ProjectsPage() {
 
   if (!repos.length) {
     return (
-      <main className="mx-6 my-12">
+      <main className="my-12 mx-auto">
         <h1 className="font-bold uppercase text-xs tracking-[0.5rem]">
           My Personal
           <span className="font-black text-[3rem] leading-[0.9] w-[10ch] uppercase text-[#6CE0D6] tracking-tight block -ml-[0.15rem]">
@@ -38,7 +38,7 @@ export default async function ProjectsPage() {
   }
 
   return (
-    <main className="mx-6 my-12">
+    <main className="mx-auto my-12">
       <section className="mt-12">
         <h2 className="font-extrabold text-accent text-4xl mb-3">
           My Projects
@@ -49,7 +49,7 @@ export default async function ProjectsPage() {
           things. <br />
           Click &lsquo;read more&lsquo; to learn more about each project.{" "}
         </p>
-        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+        <div>
           {repos.map((repo) => (
             <RepoCard key={repo.id} repo={repo} />
           ))}

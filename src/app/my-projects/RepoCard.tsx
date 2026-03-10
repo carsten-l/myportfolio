@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function RepoCard({ repo }: { repo: Repo }) {
   return (
-    <article className="border-accent border-2 border flex flex-col">
+    <article className="border-accent border-t-2 flex flex-col py-8">
       <p className="text-[0.75rem] font-extrabold uppercase tracking-widest text-gray-500">
         {repo.language || "JavaScript"}
       </p>
@@ -19,9 +19,9 @@ export default function RepoCard({ repo }: { repo: Repo }) {
         {repo.topics.map((topic) => (
           <span
             key={topic}
-            className="bg-accent-light text-xs inline-block mr-1 py-0.5 px-2 rounded-full font-mono font-medium"
+            className="text-sm inline-block mr-3 font-mono font-medium"
           >
-            {topic}
+            #{topic}
           </span>
         ))}
       </div>
