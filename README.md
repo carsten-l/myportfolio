@@ -2,7 +2,7 @@
 
 This is a Next.js project that utilizes the GitHub api to fetch starred projects from my github profile to display them on the website.
 
-If You are not viewing this page from the portfolio website, it can be viewed live here: https://myportfolio-kappa-sand.vercel.app
+If You are not already viewing this page from my portfolio website, it can be viewed live here: https://carsten-l.dev
 
 The read more page on each repo is fetched and converted to html with the npm-package 'marked'.
 
