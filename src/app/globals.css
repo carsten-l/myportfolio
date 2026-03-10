@@ -34,7 +34,7 @@ main {
 }
 
 .github-readme h1 {
-    @apply font-besley text-accent text-4xl font-extrabold;
+    @apply text-accent text-4xl font-extrabold;
 }
 
 .github-readme p {
