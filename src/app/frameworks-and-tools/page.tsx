@@ -113,16 +113,21 @@ export default function Page() {
           </span>
         </div>
         <div className="flex flex-wrap gap-8 justify-center my-8">
-          <Image
-            src={tanstack_logo_dark}
-            alt="TanStack logo light mode"
-            className="hidden dark:inline w-48"
-          />
-          <Image
-            src={tanstack_logo_light}
-            alt="TanStack logo dark mode"
-            className="inline dark:hidden w-48"
-          />
+          <span>
+            <Image
+              src={tanstack_logo_dark}
+              alt="TanStack logo light mode"
+              className="hidden dark:inline w-48"
+            />
+            <Image
+              src={tanstack_logo_light}
+              alt="TanStack logo dark mode"
+              className="inline dark:hidden w-48"
+            />
+            <p className="text-xs pl-13 font-bold uppercase">
+              Router / Query
+            </p>
+          </span>
           <Image
             src={react_router_logo_dark}
             alt="React Router logo light mode"
