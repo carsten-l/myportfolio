@@ -21,11 +21,11 @@ export default function Home() {
         tech stack.
       </p>
       <p className="text-xl leading-relaxed md:w-4/5 xl:w-3/5">
-        But don&apos;t tell it &ndash; show it! Right...
+        But don&apos;t tell it &ndash; show it, right?
       </p>
 
       <p className="text-xl leading-relaxed md:w-4/5 xl:w-3/5">
-        On this site I tell you about the frameworks and tools I enjoy using,
+        On this site, I tell you about the frameworks and tools I enjoy using,
         and I showcase some of my projects.
       </p>
 
