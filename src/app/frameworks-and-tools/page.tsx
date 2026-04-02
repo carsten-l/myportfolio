@@ -28,9 +28,9 @@ export default function Page() {
       <section className="mt-12">
         <h1 className="font-extrabold text-4xl mb-3 text-accent">Frameworks</h1>
         <p className="text-xl leading-relaxed">
-          I have experience with different frontend frameworks and libraries
-          from the js ecosystem, when i build frontend applications. Below are
-          some of the ones I have worked with.
+          I have experience with different frontend frameworks and libraries in
+          the JavaScript ecosystem. <br /> Below are some of those I have worked
+          with.
         </p>
         <div className="flex flex-wrap gap-8 justify-center my-8">
           <Image
@@ -91,9 +91,9 @@ export default function Page() {
         <h1 className="font-extrabold text-4xl mb-3 text-accent">
           Other tools
         </h1>
-        <p className="text-xl leading-relaxed">
+        <p className="text-xl leading-relaxed w-4/5">
           The above list rarely do the job alone. Below are some of the other
-          tools I use in my workflow.
+          tools I have used in my workflow in different combinations.
         </p>
         <div className="flex flex-wrap gap-8 justify-center my-8">
           <Image src={typescript_logo} alt="TypeScript logo" className="w-48" />
@@ -124,9 +124,7 @@ export default function Page() {
               alt="TanStack logo dark mode"
               className="inline dark:hidden w-48"
             />
-            <p className="text-xs pl-13 font-bold uppercase">
-              Router / Query
-            </p>
+            <p className="text-xs pl-13 font-bold uppercase">Router / Query</p>
           </span>
           <Image
             src={react_router_logo_dark}
