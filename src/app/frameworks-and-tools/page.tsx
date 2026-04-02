@@ -36,12 +36,12 @@ export default function Page() {
           <Image
             src={astro_logo_dark}
             alt="Astro logo light mode"
-            className="inline dark:hidden w-56"
+            className="inline dark:hidden w-48"
           />
           <Image
             src={astro_logo_light}
             alt="Astro logo dark mode"
-            className="hidden dark:inline w-56"
+            className="hidden dark:inline w-48"
           />
           <Image
             src={vue_logo_dark}
