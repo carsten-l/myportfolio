@@ -21,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${adwaitaSans.className} antialiased`}
-      >
+      <body className={`${adwaitaSans.className} antialiased`}>
         <header className="antialiased mb-6 mx-auto border-b border-accent pb-6 md:pb-0">
           <div className="flex flex-col justify-center md:flex-row md:justify-between">
             <div className="text-2xl font-bold py-6 text-center md:text-left md:py-12">
@@ -32,6 +30,9 @@ export default function RootLayout({
             <nav className="flex gap-6 md:gap-10 self-center">
               <Link className="font-medium" href="/">
                 Home
+              </Link>
+              <Link className="font-medium" href="/frameworks-and-tools">
+                Frameworks and Tools
               </Link>
               <Link className="font-medium" href="/my-projects">
                 My Projects
