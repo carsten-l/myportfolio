@@ -18,8 +18,10 @@ import github_logo_dark from "../assets/GitHub_Lockup_White.svg";
 import tailwind_logo_light from "../assets/tailwindcss-logotype.svg";
 import tailwind_logo_dark from "../assets/tailwindcss-logotype-white.svg";
 import zod_logo from "../assets/zod-logo-glow.webp";
-import nuxt_logo_light from "../assets/nuxt-logo-green-black.svg";
-import nuxt_logo_dark from "../assets/nuxt-logo-green-white.svg";
+import copilot_logo_light from "../assets/GitHub_Copilot_Lockup_Black.svg";
+import copilot_logo_dark from "../assets/GitHub_Copilot_Lockup_White.svg";
+import vitest_logo_light from "../assets/vitest-light.svg";
+import vitest_logo_dark from "../assets/vitest-dark.svg";
 import Image from "next/image";
 
 export default function Page() {
@@ -53,18 +55,7 @@ export default function Page() {
             alt="Vue logo dark mode"
             className="inline dark:hidden w-40"
           />
-          <Image
-            src={nuxt_logo_dark}
-            alt="Nuxt logo light mode"
-            className="hidden dark:inline w-40"
-          />
-          <Image
-            src={nuxt_logo_light}
-            alt="Nuxt logo dark mode"
-            className="inline dark:hidden w-40"
-          />
-        </div>
-        <div className="flex flex-wrap gap-8 justify-center my-8">
+
           <Image
             src={react_logo_dark}
             alt="React logo light mode"
@@ -97,6 +88,10 @@ export default function Page() {
         </p>
         <div className="flex flex-wrap gap-8 justify-center my-8">
           <Image src={typescript_logo} alt="TypeScript logo" className="w-48" />
+          <span className="flex gap-2 items-center">
+            <Image src={zod_logo} alt="Zod logo" className="w-16" />
+            <p className="text-3xl font-bold">Zod</p>
+          </span>
           <Image
             src={tailwind_logo_dark}
             alt="Tailwind CSS logo light mode"
@@ -107,12 +102,18 @@ export default function Page() {
             alt="Tailwind CSS logo dark mode"
             className="inline dark:hidden w-64"
           />
-          <span className="flex gap-2 items-center">
-            <Image src={zod_logo} alt="Zod logo" className="w-16" />
-            <p className="text-3xl font-bold">Zod</p>
-          </span>
         </div>
         <div className="flex flex-wrap gap-8 justify-center my-8">
+          <Image
+            src={vitest_logo_dark}
+            alt="Vitest logo light mode"
+            className="hidden dark:inline w-48"
+          />
+          <Image
+            src={vitest_logo_light}
+            alt="Vitest logo dark mode"
+            className="inline dark:hidden w-48"
+          />
           <span>
             <Image
               src={tanstack_logo_dark}
@@ -136,6 +137,8 @@ export default function Page() {
             alt="React Router logo dark mode"
             className="inline dark:hidden w-48"
           />
+        </div>
+        <div className="flex flex-wrap gap-8 justify-center my-8">
           <Image
             src={git_logo_dark}
             alt="Git logo light mode"
@@ -149,12 +152,22 @@ export default function Page() {
           <Image
             src={github_logo_dark}
             alt="GitHub logo light mode"
-            className="hidden dark:inline w-40"
+            className="hidden dark:inline w-36"
           />
           <Image
             src={github_logo_light}
             alt="GitHub logo dark mode"
-            className="inline dark:hidden w-40"
+            className="inline dark:hidden w-36"
+          />
+          <Image
+            src={copilot_logo_dark}
+            alt="GitHub Copilot logo light mode"
+            className="hidden dark:inline w-64"
+          />
+          <Image
+            src={copilot_logo_light}
+            alt="GitHub Copilot logo dark mode"
+            className="inline dark:hidden w-64"
           />
         </div>
       </section>
